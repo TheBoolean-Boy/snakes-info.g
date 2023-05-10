@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color: #2d2e30;
+    --secondary-text-color: #c8cfd7;
+    --padding-overall: 5px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    color: var(--secondary-text-color);
+    padding: var(--padding-overall);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: var(--primary-text-color);
+    padding-top: 20px;
+    padding: var(--padding-overall);
+    font-weight: 1500;
+    padding-left: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-text-color);
+    font-size: 1.25em;
+    padding-top: 10px;
+    padding: var(--padding-overall);
+    padding-left: 20px;
+}
+
+body {
+    display: flex;
+    background-image: url('https://source.unsplash.com/1920x1080/?nature, beach');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: 160vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    padding: var(--padding-overall);
+    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+}
+.image-part:hover{
+    
+    box-shadow: 0 0 12px #ddd;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: 150vh;
+    width: 99%;
+    border-radius: 20px;
+    /* background: rgba(5, 5, 35, 0.1); */
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+    margin-bottom: 390px;
+    padding: 20px;
+
+}
+.header-part{
+    width: 45%;
+    height: 450px;
+    text-align: center;
+    background: rgba(1, 1, 16, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgb(11, 11, 11);
+    
+}
+
+.head-start{
+    /* background: rgba(5, 5, 35, 0.1); */
+    /* background: rgba(5, 5, 35, 0.1); */
+    /* backdrop-filter: blur(20px); */
+    margin: 10px 50px;
+    /* border-radius: 20px; */
+    /* height: 100px; */
+
+}
+
+.image-part {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 95%;
+    height: 60%;
+    /* border-radius: 50px; */
+    /* border: 3px solid black; */
+    /* background: url('/snake\ 1.jpeg'); */
+    background-size: contain;
+    /* box-sizing: border-box; */
+    background-repeat: no-repeat;
+
+}
+img{
+    width:100%;
+    height: 100%;
+}
+
+
+.text-part {
+    margin-top: 350px;
+    width: 50%;
+    height: 100%;
+    padding-top: 40px;
+    background: rgba(5, 5, 35, 0.45);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 60px rgba(11, 11, 11);
+    border-radius: 25px;
+    padding: var(--padding-overall);
+}
+@media screen and (738px <= width <= 1224px) {
+    body{
+        height: 165vh;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .header-part{
+        margin-top: 150px;
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        height: 60vh;
+        align-items: center;
+    }
+    img{
+        /* height: 28vh;
+        width: 30vw; */
+        width: 100%;
+        height:30vh;
+    }
+    .head-text{
+        width: 100%;
+        padding: 2px;
+    }
+    .image-part{
+        
+        height:97%;
+        
+    }
+    
+    .text-part{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+@media screen and (width <= 738px){
+    .container{
+        flex-direction: column;
+        margin-bottom: 775px;
+    }
+    body{
+        height: 250vh;
+    }
+    img{
+        box-shadow: 0 0 60pxpx rgba(18,18,18,);
+        border-radius: 20px;
+        /* width: ; */
+        height:100%;
+        position: relative;
+        right: 10px;
+    }
+    .header-part{
+        margin-top: 10px;
+        width: 400px;
+    }
+    /* .image-part{
+        width: 300px;
+        position: relative;
+        left:100px;
+        /* border-radius: ; */
+        /* box-shadow: 0 0 60pxpx rgba(18,18,18,); */
+        /* top: 100px; */
+        /* width: 300px; */
+        /* height: 300px; */
+        /* bottom: 50px; */
+    
+    .text-part{
+        /* margin-top: 0px; */
+        width:90vw;
+        height:150vh;
+        margin-top: 22px;
+    }
+    
+}
